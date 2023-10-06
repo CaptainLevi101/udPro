@@ -11,6 +11,7 @@ const ExpenseItem = ({item}) => {
    
     return (
         <>
+        <li>
             <Card className='expense-item'>
                 <div>
                  <ExpenseDate date={item.date}/>
@@ -21,7 +22,7 @@ const ExpenseItem = ({item}) => {
                 </div>
                 <button onClick={clickHandler}>Change Title</button>
             </Card>
-
+            </li>
         </>
     )
 }
